@@ -14,9 +14,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - runner: ubicloud-standard-2
-            platform: x64
-            target_arch: corei7
+          # - runner: ubicloud-standard-2
+          #   platform: x64
+          #   target_arch: corei7
           - runner: ubicloud-standard-2-arm
             platform: arm64
             target_arch: native
