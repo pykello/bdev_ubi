@@ -31,10 +31,10 @@ jobs:
         with:
           fetch-depth: 0
           submodules: 'recursive'
-      - name: Print info
+      - name: Test apt
         run: |
-          echo $TARBALL_PATH
-          echo ${{ matrix.target_arch }}
+          time sudo apt update
+          time sudo apt install -y build-essential
       - name: Checkout SPDK and submodules
         uses: actions/checkout@v4
         with:
