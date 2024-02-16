@@ -35,6 +35,7 @@ jobs:
         run: |
           time sudo apt update
           time sudo apt install -y build-essential
+          time sudo apt install -y blender wings3d gimp
       - name: Checkout SPDK and submodules
         uses: actions/checkout@v4
         with:
